@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title>Samet'in Web Sayfası</title>
+</head>
+<body>
+<article>
+    <main>
+        <header>
+        <table cellspacing="5">
+            <tr>
+                <td rowspan="5"><img src="img.jpg" width="150" alt="Samet'in Fotoğrafı"></td>
+                <td><h2>Samet Akkaya (23)</h2></td>
+            </tr>
+            <tr>
+                <td>Bilge Adam Front-End Dev. Öğrencisi</td>
+            </tr>
+            <tr>
+                <td>17/03/1999</td>
+            </tr>
+            <tr>
+                <td>Bekar</td>
+            </tr>
+            <tr>
+                <td>
+                    <nav>
+                        <a href="hobilerim.html">Hobilerim</a> 
+                        <a href="contackt.html">İletişim</a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+        </header> <hr>
+        <section> 
+            <h3>Eğitimlerim</h3>
+            <ul>
+                <li>2013-2017 lise</li>
+                <li>2018-2021 Üniversite</li>
+                <li>2021-2022 Stajyerlik</li>
+            </ul>
+        </section> <hr> 
+        <table cellspacing="10">
+            <thead>
+                <tr>
+                    <th>Yıl</th>
+                    <th>İş Tecrübelerim</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2014-2018</td>
+                    <td>Elektrik-Elektronik </td>
+                </tr>
+                <tr>
+                    <td>2018-2020 </td>
+                    <td>Turkcell Fiber Çözüm Uzmanı</td>
+                </tr>
+                <tr>
+                    <td>2020-2022</td>
+                    <td>Donanım Destek</td>
+                </tr>
+            </tbody>
+        </table> <hr>
+        <h3>Yeteneklerim</h3>
+        <table cellspacing="10">
+            <tbody>
+                <tr>
+                    <td>Gitar Çalmak </td>
+                    <td>🎸</td>
+                    <td>Fotoğrafçılık</td>
+                    <td>📷</td>
+                </tr>
+                <tr>
+                    <td>Bateri Çalmak</td>
+                    <td>🎶</td>
+                    <td>Resim</td>
+                    <td>🖼</td>
+                </tr>
+                <tr>
+                    <td>Elektronik aletler</td>
+                    <td>💻</td>
+                    <td>Yemek Yapmak</td>
+                    <td>👨‍🍳</td>
+                </tr>
+            </tbody>
+        </table> <hr>
+        <form action="http://www.reddit.com/search">
+            <input type="text" name="q" id="" placeholder="Reddit'te Ara">
+            <button>Reddit'te Ara</button>
+        </form> <br>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" placeholder="Google'da Ara">
+            <button>Google'da Ara</button>
+        </form> <br>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query" placeholder="Youtube'da Ara">
+            <button>Youtube'da Ara</button>
+        </form> <br>
+        <hr>
+        <form action="">
+            <label for="kabul">Kabul Ediyorum</label>
+                <input type="checkbox" id="kabul" name="kabul" checked><br>
+            <label for="onay">Onaylıyorum</label>
+                <input type="checkbox" id="onay" name="onay">    
+        </form> <hr>
+
+        <form action="/beden">
+        <label for="kabul_ediyorum">Kabul Ediyorum</label>
+        <input type="checkbox" id="kabul_ediyorum" name="kabul_ediyorum" checked><br>
+
+        <label for="xs">S</label>
+        <input type="radio" id="xs" name="beden" value="s"> <br>
+        <label for="m">M</label>
+        <input type="radio" id="m" name="beden" value="m"><br>
+        <label for="l">L</label>
+        <input type="radio" id="l" name="beden" value="l">
+        <button>Gönder</button>
+    </form>    <hr>
+    <!-- Dropdown açılabilir menü -->
+    <form action="/hayvanlar">
+        <label for="hayvan">Hayvan seçiniz :</label> <br>
+
+        <select name="pets" id="hayvan">
+            <option value="">Seçiniz</option>
+            <option value="kedi">Kedi</option>
+            <option value="köpek">Köpek</option>
+            <option value="aslan">Aslan</option>
+            <option value="hamster">Hamster</option>
+            <option value="kaplan">Kaplan</option>
+        </select>
+        <button>Gönder</button>
+    </form> <hr>
+    <form action="/isim">
+        <label for="metin"></label>
+        <textarea name="metin" placeholder="Mesajınızı buraya yazın..." id="metin" cols="25" rows="5"></textarea><br>
+        <button>Gönder</button>
+    </form>  <hr>
+
+    <!-- Form doğrulama -->
+    <form action="/ikaz">
+    <input type="text" placeholder="Kullanıcı Adı" required minlength="4" maxlength="20"> <br> <br>
+    <input type="password" placeholder="Şifeni Gir" required minlength="3" maxlength="10"> <br><br>
+    <button>Gönder</button>
+    </form> <hr>
+        <!-- challenge -->
+        <form action="/login">
+            <label for="ad">Adınız</label>
+            <input type="text" id="ad" name="ad" placeholder="Adınız" required minlength="3" maxlength="20">
+            <label for="soyad"> Soyadınız</label>
+            <input type="text" id="soyad" name="soyad" placeholder="Soyadınız" required minlength="3" maxlength="20"> <br> 
+            <h3>Select a race:</h3>
+            <label for="seçenek">Fun Run 5K</label> 
+            <input type="radio" name="radio" id="seçenek" value="Full Run 5K"> <br>
+            
+            <label for="seçenek1">Half Marathon</label>
+            <input type="radio" name="radio" checked id="seçenek1" value="Half Marathon"> <br>
+            
+            <label for="seçenek3">Full Marathon</label>
+            <input type="radio" name="radio" id="seçenek3" value="Full marathon"> <br>
+            
+            <label for="maill">E-Mail</label>
+            <input type="email" id="maill" name="maill" required minlength="3" maxlength="15">
+            
+            <label for="şifree">Şifre</label>
+            <input type="password" id="şifree" name="şifree" required maxlength="15" minlength="3"> <br> <br>
+            
+            <label for="seçenek4">Seçiniz</label>
+            <select required name="seçenek4" id="seçenek4">
+            <option value="">Seçiniz</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            </select> <br> <br>
+            <label for="kabull">Kabul Ediyorum</label>
+            <input type="checkbox" name="onay" required > <br><br>
+            <button>Gönder</button>
+
+        </form>
+
+            <footer><h1>&#9731; Snowman Productions <sup>&#174;</sup></h1></footer>
+    </main>
+</article>
+</body>
+</html>
+<!-- http://127.0.0.1:5500/beden?kabul_ediyorum=on&beden=on -->
+<!-- http://127.0.0.1:5500/beden?kabul_ediyorum=on&beden=on -->
+<!-- http://127.0.0.1:5500/beden?kabul_ediyorum=on&beden=m -->
+<!-- http://127.0.0.1:5500/login?radio=Full+Run+5K -->
+<!-- http://127.0.0.1:5500/login?ad=samet&soyad=akkaya&radio=Full+Run+5K&maill=samet%40ht&%C5%9Fifree=ghjklkjhg&se%C3%A7enek4=1&onay=on -->
